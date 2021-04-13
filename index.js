@@ -23,7 +23,7 @@ function leftPad(number, targetLength) {
     return output;
 }
 let interval_time = 5
-client.login(process.env.DC_TOKEN.split("#")[1])
+client.login(process.env.DC_TOKEN.split("#")[1] + process.env.DC_TOKEN.split("#")[2] + process.env.DC_TOKEN.split("#")[3])
 client.on("ready", () => {
     var channel = client.channels.cache.get('831436674205614091');
     shcheduleWillDo()
