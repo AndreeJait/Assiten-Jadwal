@@ -2,6 +2,17 @@ const Discord = require('discord.js');
 const mongoose = require('mongoose')
 const ScheduleModel = require('./models/schedule')
 const client = new Discord.Client()
+const express = require('express')
+const app = express()
+const cors = require('cors')
+app.use(cors())
+app.get("/", (req, res) => {
+    res.send("Hello Andreee")
+})
+
+app.listen(3001, () => {
+    console.log("Server Running");
+})
 const commands = [
     ">info", ">add-schedule", ">say-love", ">today", ">today-schedule", ">add-schedule", ">set-server", ">delete-schedule", ">get-schedule", ">get-all-schedule"
 ]
