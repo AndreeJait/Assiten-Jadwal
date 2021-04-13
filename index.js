@@ -23,7 +23,7 @@ function leftPad(number, targetLength) {
     return output;
 }
 let interval_time = 5
-client.login("ODMxNDMzODI1NjczNjc0ODAy.YHVLFw.zQ7qgMoe-_6qbbutQp-mwpArDNw")
+client.login(process.env.DC_TOKEN)
 client.on("ready", () => {
     var channel = client.channels.cache.get('831436674205614091');
     shcheduleWillDo()
