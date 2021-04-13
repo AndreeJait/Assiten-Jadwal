@@ -1,0 +1,5 @@
+{
+    "env": {
+        "MONGOOSE_DB_PW": "andre110102"
+    }
+}
